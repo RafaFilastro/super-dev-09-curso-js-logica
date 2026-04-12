@@ -189,3 +189,161 @@ function exercicio17(){
 
     alert("A sua média final foi de " + media.toFixed(2));
 }
+
+function exercicio18(){
+    let idade = parseInt(prompt("Digite a sua idade"));
+    let salario = parseInt(prompt("Digite o seu salário"));
+
+    if ((idade >= 18) && (salario >= 2000)){
+        alert("Aprovado para crédito");
+    } else {
+        alert("Não aprovado");
+    }
+}
+
+function exercicio19(){
+    let hora = parseInt(prompt("Digite a hora"));
+
+    if ((hora >= 0) && (hora <= 11)){
+        alert("Bom dia");
+    } else if ((hora >= 12) && (hora <= 17)){
+        alert("Boa tarde");
+    } else if ((hora >= 18) && (hora <= 23)){
+        alert("Boa noite");
+    } else {
+        alert("Hora inválida");
+    }
+}
+
+
+function exercicio20(){
+    let n1 = parseInt(prompt("Digite um número"));
+    let n2 = parseInt(prompt("Digite outro número"));
+
+    let opcao = prompt("Escolha uma opção:" + "\n(1) Soma " + "\n(2) Subtração" + "\n(3) Divisão" + "\n(4) Multiplicação");
+
+    if (opcao == "1"){
+        let resultado = n1 + n2;
+        alert("Resultado: " + resultado);
+    } else if (opcao == "2"){
+        let resultado = n1 - n2;
+        alert("Resultado: " + resultado);
+    } else if ((opcao == "3") && (n2 != 0)){
+    let resultado = n1 / n2;
+        alert("Resultado: " + resultado);
+    } else if ((opcao == "3") && (n2 == 0)){
+        alert("Não é possível dividir por zero");
+    } else if (opcao == "4"){
+        let resultado = n1 * n2;
+        alert("Resultado: " + resultado);
+    } else {
+        alert("Opção inválida");
+    }
+}
+
+function exercicio21(){
+    let n1 = parseInt(prompt("Digite um número"));
+    let n2 = parseInt(prompt("Digite outro número"));
+    let n3 = parseInt(prompt("Digite outro número"));
+
+    if ((n1 <= n2) && (n2 <= n3)){
+        alert(n1 + "\n" + n2 + "\n" + n3);
+    } else if ((n1 <= n3) && (n3 <= n2)){
+        alert(n1 + "\n" + n3 + "\n" + n2);
+    } else if ((n2 <= n1) && (n1 <= n3)){
+        alert(n2 + "\n" + n1 + "\n" + n3);
+    } else if ((n2 <= n3) && (n3 <= n1)){
+        alert(n2 + "\n" + n3 + "\n" + n1);
+    } else if ((n3 <= n1) && (n1 <= n2)){
+        alert(n3 + "\n" + n1 + "\n" + n2);
+    } else {
+        alert(n3 + "\n" + n2 + "\n" + n1);
+    }
+}
+
+function exercicio22(){
+    let n1 = parseInt(prompt("Digite um número"));
+    let n2 = parseInt(prompt("Digite outro número"));
+    let n3 = parseInt(prompt("Digite outro número"));
+
+    if ((n1 > n2) && (n1 > n3)){
+        alert("Maior: " + n1);
+    } else if ((n2 > n1) && (n2 > n3)){
+        alert("Maior: " + n2);
+    } else {
+        alert("Maior: " + n3);
+    }
+    
+}
+
+function exercicio23(){
+    let n1 = parseInt(prompt("Digite um número"));
+    let n2 = parseInt(prompt("Digite outro número"));
+    let n3 = parseInt(prompt("Digite outro número"));
+
+    if ((n1 < n2) && (n1 < n3)){
+        alert("Menor: " + n1);
+    } else if ((n2 < n1) && (n2 < n3)){
+        alert("Menor: " + n2);
+    } else {
+        alert("Menor: " + n3);
+    }
+}
+
+function exercicio24(){
+    let n1 = parseInt(prompt("Digite um número"));
+    let n2 = parseInt(prompt("Digite outro número"));
+    let n3 = parseInt(prompt("Digitie outro número"));
+
+    if ((n1 <= n2) && (n2 <= n3)){
+        alert("Números em ordem crescente");
+    } 
+    else if ((n1 >= n2) && (n2 >= n3)){
+        alert("Números em ordem decrescente");
+    } 
+    else {
+        alert("Sem ordem definida");
+    }
+}
+
+function exercicio25(){
+    let idade = parseInt(prompt("Digite a sua idade"))
+
+    if ((idade => 0) && (idade <= 12)){
+        alert("Criança");
+    } else if ((idade => 13) && (idade <= 17)){
+        alert("Adolescente");
+    } else if ((idade => 18) && (idade <= 59)){
+        alert("Adulto");
+    } else{
+        alert("Idoso")
+    }
+}
+
+function exercicio26(){
+    let valor = parseInt(prompt("Digite o valor da sua compra"));
+    let forma = prompt("Digite a forma de pagamengto");
+
+    if ((forma === "Debito") || (forma === "Pix")){
+        let desconto = 0.10;
+        let precoDesconto = valor * desconto;
+        let precoComDesconto = valor - precoDesconto;
+        
+        alert("Você selecionou: " + forma + "\nO valor da sua compra ficou: R$: " + precoComDesconto.toFixed(2) + "\nValor do desconto R$: " + precoDesconto.toFixed(2));
+    
+    } else if ((forma === "Parcelado") || (forma === "Crédito")){
+        let acrescimo = 0.15;
+        let precoAcrescimo = valor * acrescimo;
+        let precoComAcrescimo = valor + precoAcrescimo;
+        
+        alert("Você selecionou: " + forma + "\nO valor da sua compra ficou: R$: " + precoComAcrescimo.toFixed(2) + "\nValor do acrescimo R$: " + precoAcrescimo.toFixed(2));
+    } else{
+        alert("Forma de pagamento inválida.")
+    }
+}
+
+
+/* Ex. 26: Criar função exercicio26, solicitar o valor de uma compra e a forma de pagamento:
+    * Aplicar regras diferentes conforme a forma de pagamento (ex: desconto ou acréscimo)
+    * Apresentar o valor final
+*/
