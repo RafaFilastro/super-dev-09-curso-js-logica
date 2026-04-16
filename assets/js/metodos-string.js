@@ -62,7 +62,7 @@ function removerEspacosDoComecoFinal(){
     // texto = texto.trimStart().trimEnd();
     texto = texto.trim();
 
-    console.log("O ntexto sem espaços no começo: '" + texto + "'");
+    console.log("O texto sem espaços no começo: '" + texto + "'");
 }
 
 function agregarCaracteresFim(){
@@ -95,9 +95,9 @@ function verificarSeContem(){
         alert("Primeira temporada");
     } else if (nomeEpisodio.includes("S02") === true) {
         alert("Segunda temporada");
-    } else [
+    } else {
         alert("Ao infinito e além");
-    ]
+    }
 }
 
 function verificarSeTerminaCom(){
