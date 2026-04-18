@@ -49,6 +49,12 @@ function exercicio03(){
 
 function exercicio04(){
     let nome = prompt("Digite uma palavra");
-    
+       
 
 }
+
+/*  5. Função: mostrarUltimaLetra
+    Mostrar a última letra de uma palavra.
+    Peça ao usuário para digitar uma palavra.
+    Mostre apenas a última letra dessa palavra.
+*/
