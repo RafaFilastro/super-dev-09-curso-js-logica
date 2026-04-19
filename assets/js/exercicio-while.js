@@ -345,7 +345,39 @@ e) quantidade de pacientes com idade maior ou igual a 60
 */
 
 function exercicio15RelatorioPacientes(){
-    
+    let indice = 0;
+    let pacientes = 0;
+    let somaIdades = 0;
+    let maiorTemp = 0;
+    let menorTemp = Infinity;
+    let idosos = 0;
+
+    while(indice < 5){
+        let nome = prompt("Digite o seu nome");
+        let idade = parseInt(prompt("Digite a sua idade"));
+        let temp = parseFloat(prompt("Digite a temperatura"));
+
+        somaIdades += idade;
+        if(temp > maiorTemp){
+            maiorTemp = temp;
+        }
+        if(temp < menorTemp){
+            menorTemp = temp;
+        }
+        if(idade >= 60){
+            idosos++;
+        }
+        pacientes++;
+        indice++;
+    }
+
+    let media = somaIdades / pacientes;
+
+    alert("Número de pacientes cadastrados: " + pacientes +
+          "\nMédia de idade cadastrada: " + media +
+          "\nMaior temperatura informada: " + maiorTemp +
+          "\nMenor temperatura informada: " + menorTemp +
+          "\nPacientes com idade maior ou igual à 60: " + idosos);
 }
 
 /*
@@ -354,7 +386,19 @@ Criar um while para solicitar uma senha de acesso ao sistema.
 Enquanto a senha digitada for diferente de "hospital123", continuar pedindo.
 Quando a senha estiver correta, mostrar a mensagem:
 "Acesso liberado ao sistema hospitalar".
+*/
 
+function exercicio16SenhaAcessoSistema(){
+    let senha = "";
+
+    while ( senha != "hospital123"){
+        senha = prompt("Digite a senha de acesso").toLowerCase();
+     
+    }
+    alert("Acesso liberado ao sistema hospitalar");
+}
+
+/*
 Ex. 17 Criar uma função exercicio17CadastroComValidacaoCompleta.
 Criar um while para cadastrar 5 médicos.
 Solicitar nome e CRM.
@@ -362,7 +406,29 @@ O nome não pode estar vazio.
 O CRM não pode estar vazio.
 Caso algum dos dois esteja inválido, pedir novamente os dados do mesmo médico.
 Ao final, mostrar quantos médicos foram cadastrados corretamente.
+*/
 
+function exercicio17CadastroComValidacaoCompleta(){
+    let indice = 0;
+    let medicos = 0;
+
+    while(indice < 5){
+        let nome = prompt("Digite o nome");
+        let crm = prompt("Digite o CRM");
+
+        if((nome.trim() === "") || (crm.trim() === "")){
+            alert("Nome e CRM são obrigatórios. Tente novamente.");
+            continue;
+        }
+
+        medicos++;
+        indice++;
+    }
+
+    alert("Total de médicos cadastrados: " + medicos);
+}
+
+/*
 Ex. 18 Criar uma função exercicio18RelatorioFinalInternacoes.
 Criar um while para solicitar o nome do paciente e a quantidade de dias internado de 6 pacientes.
 Somar todos os dias de internação.
@@ -371,5 +437,31 @@ Ao final, mostrar:
 a) total de dias de internação
 b) média de dias internados
 c) nome do paciente com maior tempo de internação
-
 */
+
+function exercicio18RelatorioFinalInternacoes(){
+    let indice = 0;
+    let totalDias = 0;
+    let maiorDias = 0;
+    let nomeMaior = "";
+
+    while(indice < 6){
+        let nome = prompt("Digite o nome do paciente");
+        let dias = parseInt(prompt("Digite a quantidade de dias internado"));
+
+        totalDias += dias;
+
+        if(dias > maiorDias){
+            maiorDias = dias;
+            nomeMaior = nome;
+        }
+        indice++;
+    }
+    let media = totalDias / 6;
+
+    alert(
+        "Total de dias de internação: " + totalDias +
+        "\nMédia de dias internados: " + media +
+        "\nPaciente com maior tempo internado: " + nomeMaior
+    );
+}
