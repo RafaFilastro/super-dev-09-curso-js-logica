@@ -198,25 +198,106 @@ Ex. 10 Criar uma função exercicio10MaiorTemperatura.
 Criar um while para solicitar a temperatura de 5 pacientes.
 Verificar qual foi a maior temperatura informada.
 Ao final, mostrar a maior temperatura digitada.
+*/
 
+function exercicio10MaiorTemperatura(){
+    let temp = 0;
+    let maiorTemp = null;
+
+    while (temp < 5){
+        let tempe = parseFloat(prompt("Digite a temperatura do paciente"));
+    if(tempe > maiorTemp){
+        maiorTemp = tempe;
+    }
+    temp = temp +1;
+    }
+    alert("A maior temperatura é: " + maiorTemp);
+}
+
+/*
 Ex. 11 Criar uma função exercicio11MenorTemperatura.
 Criar um while para solicitar a temperatura de 5 pacientes.
 Verificar qual foi a menor temperatura informada.
 Ao final, mostrar a menor temperatura digitada.
+*/
 
+function exercicio11MenorTemperatura(){
+    let temp = 0;
+    let menorTemp = null;
+
+    while (temp < 5){
+        let tempe = parseFloat(prompt("Digite a temperatura do paciente"));
+        if((menorTemp === null) || (tempe < menorTemp)){
+            menorTemp = tempe;
+        }
+        temp++;
+    }
+    alert("A menor temperatura é: " + menorTemp);
+}
+
+
+/*
 Ex. 12 Criar uma função exercicio12ContarSintomas.
 Criar um while para solicitar o nome de 5 pacientes.
 Para cada paciente, perguntar se ele está com febre.
 Contar quantos responderam "sim".
 Ao final, mostrar a quantidade de pacientes com febre.
+*/
 
+function exercicio12ContarSintomas(){
+    let contador = 0; 
+    let totalFebre = 0;
+
+    while (contador < 5){
+        let nome = prompt("Digite o seu nome");
+        let sintoma = prompt("Você está com febre? (sim ou não)");
+
+        if (sintoma === "sim"){
+            totalFebre++;
+        }
+
+        contador++;
+    }
+
+    alert("Número de pessoas com febre: " + totalFebre);
+}
+
+
+/*
 Ex. 13 Criar uma função exercicio13SepararPacientesPorIdade.
 Criar um while para solicitar o nome e a idade de 8 pacientes.
 Contar quantos são crianças (idade menor que 12).
 Contar quantos são adolescentes (idade entre 12 e 17).
 Contar quantos são adultos (idade maior ou igual a 18).
 Ao final, mostrar a quantidade em cada grupo.
+*/
 
+function exercicio13SepararPacientesPorIdade(){
+    let contador = 0;
+    let criancas = 0;
+    let adolescentes = 0;
+    let adultos = 0;
+
+    while(contador < 3){
+        let nome = prompt("Digite o seu nome");
+        let idade = parseInt(prompt("Digite a sua idade"));
+    if(idade <= 12){
+        criancas++;
+    }else if((idade >= 13) && (idade <= 17)){
+        adolescentes++;
+    }else if((idade >= 18) && (idade <= 100)){
+        adultos++;
+    }
+        contador++;
+    }
+    alert("Total de crianças: " + 
+        "\nCrianças: " + criancas + 
+        "\nAdolescentes: " + adolescentes + 
+        "\nAdultos: " + adultos);
+}
+
+
+/*
 Ex. 14 Criar uma função exercicio14ValidarOpcaoMenu.
 Criar um while para exibir um menu com as opções:
 1 - Cadastrar paciente
@@ -225,7 +306,33 @@ Criar um while para exibir um menu com as opções:
 Enquanto o usuário não digitar 3, o menu deve continuar aparecendo.
 Se digitar uma opção inválida, mostrar uma mensagem de erro.
 Ao final, mostrar a mensagem "Sistema encerrado".
+*/
 
+function exercicio14ValidarOpcaoMenu(){
+    let opcao = 0;
+
+    while (opcao !== 3){
+        opcao = parseInt(prompt(
+            "Menu de opções" +
+            "\n1 - Cadastrar paciente" +
+            "\n2 - Cadastrar médico" +
+            "\n3 - Sair"
+        ));
+    if(opcao === 1){
+        alert("Paciente cadastrado");
+    }else if(opcao === 2){
+        alert("Médico castrado");
+    }else if(opcao === 3){
+        alert("Você escolheu SAIR");
+    }else{
+        alert("Opção inválida");
+    }
+    }
+    alert("Sistema encerrado");
+}
+
+
+/*
 Ex. 15 Criar uma função exercicio15RelatorioPacientes.
 Criar um while para solicitar os dados de 5 pacientes.
 Solicitar nome, idade e temperatura.
@@ -235,7 +342,13 @@ b) média das idades
 c) maior temperatura informada
 d) menor temperatura informada
 e) quantidade de pacientes com idade maior ou igual a 60
+*/
 
+function exercicio15RelatorioPacientes(){
+    
+}
+
+/*
 Ex. 16 Criar uma função exercicio16SenhaAcessoSistema.
 Criar um while para solicitar uma senha de acesso ao sistema.
 Enquanto a senha digitada for diferente de "hospital123", continuar pedindo.
