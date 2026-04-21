@@ -78,31 +78,30 @@ function treino03(){
 NÍVEL 2 — Comparação (onde você erra mais)
 
 Foco: maior / menor
-
-🧩 Exercício 4
+Exercício 4
 
 Digite 5 números e mostre o maior
 
-🧩 Exercício 5
+Exercício 5
 
 Digite 5 números e mostre o menor
 
-👉 dica:
+dica:
 
 usa Infinity no menor
-🧩 Exercício 6
+Exercício 6
 
 Digite nome e idade de 5 pessoas
 Mostre o nome da pessoa mais velha
 
-👉 aqui começa ficar interessante:
+aqui começa ficar interessante:
 
 você precisa guardar nome + valor
-🔹 NÍVEL 3 — Mistura (nível real)
+NÍVEL 3 — Mistura (nível real)
 
 Foco: juntar tudo
 
-🧩 Exercício 7
+Exercício 7
 
 Digite nome e temperatura de 5 pacientes
 Mostre:
@@ -110,7 +109,7 @@ Mostre:
 maior temperatura
 menor temperatura
 média das temperaturas
-🧩 Exercício 8
+Exercício 8
 
 Digite nome e idade de 5 pessoas
 Mostre:
@@ -118,20 +117,20 @@ Mostre:
 média das idades
 quantos têm 18+
 nome da pessoa mais nova
-🔹 NÍVEL 4 — Validação (onde separa iniciante de júnior)
+NÍVEL 4 — Validação (onde separa iniciante de júnior)
 
 Foco: controle de fluxo (continue)
 
-🧩 Exercício 9
+Exercício 9
 
 Cadastro de 5 usuários
 
 nome não pode ser vazio
 idade deve ser número válido
 
-👉 se estiver errado → repetir o mesmo usuário
+se estiver errado → repetir o mesmo usuário
 
-🧩 Exercício 10 (🔥 nível empresa)
+Exercício 10 (🔥 nível empresa)
 
 Cadastro de 5 produtos
 
