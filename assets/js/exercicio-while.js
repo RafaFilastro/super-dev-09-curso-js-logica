@@ -411,7 +411,6 @@ Ao final, mostrar quantos médicos foram cadastrados corretamente.
 function exercicio17CadastroComValidacaoCompleta(){
     let indice = 0;
     let medicos = 0;
-
     while(indice < 5){
         let nome = prompt("Digite o nome");
         let crm = prompt("Digite o CRM");

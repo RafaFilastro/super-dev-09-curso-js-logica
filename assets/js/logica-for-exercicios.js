@@ -4,9 +4,9 @@ Criar uma função exercicio01MostrarNumeros.
 Criar um for para mostrar os números de 1 até 5 no console.
 */
 
-function exercicio01MostrarNumeros(){
-    for(let indice = 1; indice < 6; indice = indice +1){
-            alert(indice);  
+function exercicio01MostrarNumeros() {
+    for (let indice = 1; indice < 6; indice = indice + 1) {
+        alert(indice);
     }
 
 }
@@ -18,9 +18,9 @@ Solicitar um nome ao usuário.
 Criar um for para mostrar esse nome 3 vezes no console.
 */
 
-function exercicio02MostrarNomeVariasVezes(){
+function exercicio02MostrarNomeVariasVezes() {
     let nome = prompt("Digite o seu nome");
-    for(let indice = 0; indice < 3; indice = indice +1){
+    for (let indice = 0; indice < 3; indice = indice + 1) {
         alert(nome);
     }
 }
@@ -31,8 +31,8 @@ Criar uma função exercicio03ContarAteDez.
 Criar um for para mostrar os números de 1 até 10 no console.
 */
 
-function exercicio03ContarAteDez(){
-    for(let indice = 1; indice < 11; indice = indice +1){
+function exercicio03ContarAteDez() {
+    for (let indice = 1; indice < 11; indice = indice + 1) {
         alert(indice);
     }
 }
@@ -43,8 +43,8 @@ Criar uma função exercicio04ContarRegressivo.
 Criar um for para mostrar os números de 5 até 1 no console.
 */
 
-function exercicio04ContarRegressivo(){
-    for(let indice = 5; indice > 0; indice = indice -1){
+function exercicio04ContarRegressivo() {
+    for (let indice = 5; indice > 0; indice = indice - 1) {
         alert(indice);
     }
 }
@@ -56,13 +56,13 @@ Criar um for para somar os números de 1 até 5.
 Ao final, mostrar o resultado da soma.
 */
 
-function exercicio05SomarNumeros(){
+function exercicio05SomarNumeros() {
     let soma = 0;
-        for(let indice = 0; indice < 5; indice = indice +1){
-            let numero = parseInt(prompt("Digite o número"));
+    for (let indice = 0; indice < 5; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite o número"));
         soma = numero + soma;
-        }
-        alert("Valor da soma: " + soma);
+    }
+    alert("Valor da soma: " + soma);
 }
 
 /*
@@ -71,12 +71,12 @@ Criar uma função exercicio06MostrarNumerosPares.
 Criar um for para mostrar os números pares de 0 até 10 no console.
 */
 
-function exercicio06MostrarNumerosPares(){
-    for(let indice = 0; indice <= 10; indice = indice + 1){
-   
-     if (indice % 2 === 0){
-        alert(indice);
-    }
+function exercicio06MostrarNumerosPares() {
+    for (let indice = 0; indice <= 10; indice = indice + 1) {
+
+        if (indice % 2 === 0) {
+            alert(indice);
+        }
     }
 }
 
@@ -86,9 +86,9 @@ Criar uma função exercicio07MostrarNumerosImpares.
 Criar um for para mostrar os números ímpares de 1 até 9 no console.
 */
 
-function exercicio07MostrarNumerosImpares(){
-    for(let indice = 0; indice <= 10; indice = indice +1){
-        if(indice % 2 !== 0){
+function exercicio07MostrarNumerosImpares() {
+    for (let indice = 0; indice <= 10; indice = indice + 1) {
+        if (indice % 2 !== 0) {
             alert(indice);
         }
     }
@@ -101,14 +101,14 @@ Criar um for para solicitar o nome de 3 pessoas.
 Mostrar cada nome digitado no console.
 */
 
-function exercicio08SolicitarTresNomes(){
+function exercicio08SolicitarTresNomes() {
     let nomes = "";
-    for(let indice = 0; indice < 3; indice = indice +1){
+    for (let indice = 0; indice < 3; indice = indice + 1) {
         let nome = prompt("Digite o seu nome");
         nomes = nomes + nome + "\n";
     }
     alert(nomes)
-    
+
 }
 
 /*
@@ -119,11 +119,11 @@ Somar as idades informadas.
 Ao final, mostrar a soma total.
 */
 
-function exercicio09SomarTresIdades(){
+function exercicio09SomarTresIdades() {
     let somaTotal = 0;
-    for(let indice = 0; indice < 3; indice = indice + 1){
+    for (let indice = 0; indice < 3; indice = indice + 1) {
         let idade = parseInt(prompt("Digite a sua idade"));
-    somaTotal = somaTotal + idade;
+        somaTotal = somaTotal + idade;
     }
     alert(somaTotal);
 }
@@ -136,9 +136,9 @@ Somar as notas.
 Ao final, calcular e mostrar a média.
 */
 
-function exercicio10CalcularMediaSimples(){
+function exercicio10CalcularMediaSimples() {
     let soma = 0;
-    for(let indice = 0; indice < 4; indice = indice + 1){
+    for (let indice = 0; indice < 4; indice = indice + 1) {
         let nota = parseInt(prompt("Digite as suas notas"));
         soma = soma + nota;
     }
@@ -154,13 +154,13 @@ Verificar quantas possuem 18 anos ou mais.
 Ao final, mostrar a quantidade encontrada.
 */
 
-function exercicio11ContarMaioresDeIdade(){
+function exercicio11ContarMaioresDeIdade() {
     let maioridade = 0;
-    for(let indice = 0; indice < 5; indice = indice + 1){
+    for (let indice = 0; indice < 5; indice = indice + 1) {
         let idade = parseInt(prompt("Digite a sua idade"));
-     if(idade >= 18){
-        maioridade = maioridade + 1;  
-    }
+        if (idade >= 18) {
+            maioridade = maioridade + 1;
+        }
     }
     alert("Números de maior de idade: " + maioridade);
 }
@@ -172,13 +172,13 @@ Solicitar um número ao usuário.
 Criar um for para mostrar a tabuada desse número de 1 até 10.
 */
 
-function exercicio12MostrarTabuada(){
-    
+function exercicio12MostrarTabuada() {
+
     let numero = parseInt(prompt("Digite um número"));
 
-    for(let indice = 1; indice <= 10; indice = indice + 1){
+    for (let indice = 1; indice <= 10; indice = indice + 1) {
         let resultado = numero * indice;
-        alert(numero + " X " + indice + " = " + resultado);    
+        alert(numero + " X " + indice + " = " + resultado);
     }
 }
 
@@ -189,9 +189,9 @@ Criar um for para solicitar o nome de 4 pessoas.
 Mostrar quantas letras cada nome possui.
 */
 
-function exercicio13ContarLetrasNomes(){
+function exercicio13ContarLetrasNomes() {
 
-    for(let indice = 0; indice < 4; indice = indice + 1){
+    for (let indice = 0; indice < 4; indice = indice + 1) {
         let nome = prompt("Digite seu nome");
 
         let nomeSemEspaco = nome.replaceAll(" ", "");
@@ -208,17 +208,17 @@ Verificar qual foi o maior número digitado.
 Ao final, mostrar o maior valor.
 */
 
-function exercicio14MaiorNumero(){
+function exercicio14MaiorNumero() {
     let maiorNumero = null;
 
-    for(let indice = 0; indice < 5; indice = indice +1){
+    for (let indice = 0; indice < 5; indice = indice + 1) {
         let numero = parseInt(prompt("Digite um numero"));
-    if(maiorNumero === null || numero > maiorNumero){
-        maiorNumero = numero;
-    }
+        if (maiorNumero === null || numero > maiorNumero) {
+            maiorNumero = numero;
+        }
     }
     alert("Maior número: " + maiorNumero);
-    
+
 }
 
 /*
@@ -229,14 +229,14 @@ Verificar qual foi o menor número digitado.
 Ao final, mostrar o menor valor.
 */
 
-function exercicio15MenorNumero(){
+function exercicio15MenorNumero() {
     let menorNumero = null;
 
-    for(let indice = 0; indice < 5; indice = indice + 1){
+    for (let indice = 0; indice < 5; indice = indice + 1) {
         let numero = parseInt(prompt("Digite um número"));
-     if(menorNumero === null || numero < menorNumero){
-        menorNumero = numero;
-    }
+        if (menorNumero === null || numero < menorNumero) {
+            menorNumero = numero;
+        }
     }
     alert("Menor número: " + menorNumero);
 }
@@ -249,14 +249,14 @@ Contar quantos números são maiores que zero.
 Ao final, mostrar a quantidade de números positivos.
 */
 
-function exercicio16ContarPositivos(){
+function exercicio16ContarPositivos() {
     let contarNumeros = 0;
 
-    for(let indice = 0; indice < 6; indice = indice + 1){
+    for (let indice = 0; indice < 6; indice = indice + 1) {
         let numero = parseInt(prompt("Digite um número"));
-    if(numero > 0){
-        contarNumeros = contarNumeros +1;
-    }
+        if (numero > 0) {
+            contarNumeros = contarNumeros + 1;
+        }
     }
     alert("A quantidade de numeros maior que 0: " + contarNumeros);
 }
@@ -269,14 +269,14 @@ Somar apenas os números pares.
 Ao final, mostrar a soma dos pares.
 */
 
-function exercicio17SomarPares(){
+function exercicio17SomarPares() {
     let soma = 0;
-   
-    for(let indice = 0; indice < 5; indice = indice + 1){
+
+    for (let indice = 0; indice < 5; indice = indice + 1) {
         let numero = parseInt(prompt("Digite um número"));
-    if(numero % 2 === 0){
-        soma = soma + numero;
-    }
+        if (numero % 2 === 0) {
+            soma = soma + numero;
+        }
     }
     alert("A soma dos números pares é: " + soma);
 }
@@ -287,12 +287,12 @@ Criar uma função exercicio18MostrarMultiplosDeTres.
 Criar um for para mostrar os múltiplos de 3 entre 1 e 30.
 */
 
-function exercicio18MostrarMultiplosDeTres(){
+function exercicio18MostrarMultiplosDeTres() {
 
-    for(let indice = 1; indice <= 30; indice = indice +1){
-    if(indice % 3 === 0){
-        alert(indice);
-    }
+    for (let indice = 1; indice <= 30; indice = indice + 1) {
+        if (indice % 3 === 0) {
+            alert(indice);
+        }
     }
 }
 
@@ -303,8 +303,8 @@ Criar um for para solicitar o nome de 3 produtos.
 Ao final, mostrar a mensagem "Produtos cadastrados com sucesso".
 */
 
-function exercicio19CadastrarProdutos(){
-    for(let indice = 0; indice < 3; indice = indice + 1){
+function exercicio19CadastrarProdutos() {
+    for (let indice = 0; indice < 3; indice = indice + 1) {
         let produto = prompt("Cadastre o produto");
     }
     alert("Produtos cadastrados com sucesso.")
@@ -320,23 +320,23 @@ b) soma das idades
 c) média das idades
 */
 
-function exercicio20RelatorioSimples(){
+function exercicio20RelatorioSimples() {
     let pessoas = 0;
     let soma = 0;
     let media = 0;
-    
-    for(let indice = 0; indice < 3; indice = indice + 1){
+
+    for (let indice = 0; indice < 3; indice = indice + 1) {
         let nome = prompt("Digite o seu nome").trim();
         let idade = parseInt(prompt("Digite a sua idade"));
-        pessoas = pessoas +1;
+        pessoas = pessoas + 1;
         soma = soma + idade;
-    } 
+    }
     media = soma / 3;
 
     alert("Número de pessoas cadastradas: " + pessoas +
-          "\nSoma das idades: " + soma +
-          "\nIdade media: " + media
-        );
+        "\nSoma das idades: " + soma +
+        "\nIdade media: " + media
+    );
 }
 
 /*
@@ -346,11 +346,14 @@ Solicitar dois números ao usuário: início e fim.
 Criar um for para mostrar apenas os números pares dentro desse intervalo.
 */
 
-function exercicio21MostrarNumerosParesIntervalo(){
-    
-    for(let indice = 0; indice < 2; indice = indice +1){
-        let numero = parseInt(prompt("Digite o numero"));
-    if()
+function exercicio21MostrarNumerosParesIntervalo() {
+    let comeco = parseInt(prompt("Digite um numero inicial"))
+    let final = parseInt(prompt("Digite um numero Final"))
+
+    for (let indice = comeco; indice <= final; indice = indice + 1) {
+        if (indice % 2 === 0) {
+            alert(indice)
+        }
     }
 }
 
@@ -360,37 +363,128 @@ Criar uma função exercicio22SomarNumerosIntervalo.
 Solicitar dois números ao usuário: início e fim.
 Criar um for para somar todos os números dentro desse intervalo.
 Ao final, mostrar a soma total.
+*/
 
+function exercicio22SomarNumerosIntervalo() {
+    let comeco = parseInt(prompt("Digite o número inicial"))
+    let final = parseInt(prompt("Digite o número final"))
+    let soma = 0;
+
+    for (let indice = comeco; indice <= final; indice = indice + 1) {
+        soma = soma + indice
+
+    }
+    alert("A soma é: " + soma);
+
+}
+
+/*
 Ex. 23
 Criar uma função exercicio23ContarNumerosNegativos.
 Criar um for para solicitar 6 números.
 Contar quantos números são negativos.
 Ao final, mostrar a quantidade de números negativos.
+*/
 
+function exercicio23ContarNumerosNegativos() {
+    let negativos = 0;
+
+    for (let indice = 0; indice < 6; indice = indice + 1) {
+        let numeros = parseInt(prompt("Digite o número"))
+        if (numeros < 0)
+            negativos = negativos + 1
+    }
+    alert("A quantidade de numeros negativos é: " + negativos)
+}
+
+/*
 Ex. 24
 Criar uma função exercicio24CalcularMediaAlturas.
 Criar um for para solicitar a altura de 5 pessoas.
 Somar todas as alturas.
 Ao final, calcular e mostrar a média das alturas.
+*/
 
+function exercicio24CalcularMediaAlturas() {
+    let soma = 0;
+
+
+    for (let indice = 0; indice < 5; indice = indice + 1) {
+        let altura = parseFloat(prompt("Digite a altura"))
+        if (altura >= 0)
+            soma = soma + altura;
+    }
+    let media = 0;
+    media = soma / 5
+    alert("A media de altura é: " + media.toFixed(2))
+}
+
+
+/*
 Ex. 25
 Criar uma função exercicio25ContarNotasAcimaSete.
 Criar um for para solicitar 8 notas.
 Verificar quantas notas são maiores ou iguais a 7.
 Ao final, mostrar a quantidade encontrada.
+*/
 
+function exercicio25ContarNotasAcimaSete() {
+    let quantidade = 0;
+
+    for (let indice = 0; indice < 8; indice = indice + 1) {
+        let nota = parseInt(prompt("Digite a nota"))
+        if (nota >= 7)
+            quantidade = quantidade + 1;
+    }
+    alert("Das 8 notas digitadas " + quantidade + " são maiores ou iguais a 7")
+
+}
+
+
+/*
 Ex. 26
 Criar uma função exercicio26MaiorEMenorNumero.
 Criar um for para solicitar 7 números.
 Verificar qual foi o maior e qual foi o menor número digitado.
 Ao final, mostrar os dois valores.
+*/
 
+function exercicio26MaiorEMenorNumero() {
+    debugger
+    let maiorNumero = 0;
+    let menorNumero = 9999;
+    for (let indice = 0; indice < 7; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite um número"))
+        if (numero > maiorNumero)
+            maiorNumero = numero;
+        if (numero < menorNumero)
+            menorNumero = numero;
+    }
+
+    alert("O maior numero digitado foi: " + maiorNumero +
+        "\nO menor numero digitado foi: " + menorNumero)
+}
+
+/*
 Ex. 27
 Criar uma função exercicio27SomarIdadesMaioresDeIdade.
 Criar um for para solicitar o nome e a idade de 5 pessoas.
 Somar apenas as idades das pessoas com 18 anos ou mais.
 Ao final, mostrar a soma total.
+*/
 
+function exercicio27SomarIdadesMaioresDeIdade() {
+    let soma = 0;
+    for (let indice = 0; indice < 5; indice = indice + 1) {
+        let nome = prompt("Digite o seu nome")
+        let idade = parseInt(prompt("Digite as idades"))
+        if (idade >= 18)
+            soma = soma + idade;
+    }
+    alert("A soma total das idades que são maiores de 18 anos é: " + soma)
+}
+
+/*
 Ex. 28
 Criar uma função exercicio28ContarHomensEMulheres.
 Criar um for para solicitar o nome e o sexo de 6 pessoas.
@@ -398,7 +492,26 @@ Considerar apenas "M" para masculino e "F" para feminino.
 Ao final, mostrar:
 a) quantidade de homens
 b) quantidade de mulheres
+*/
 
+function exercicio28ContarHomensEMulheres() {
+    debugger
+    let homens = 0;
+    let mulheres = 0;
+    for (let indice = 0; indice < 2; indice = indice + 1) {
+        let nome = prompt("Digite o nome")
+        let sexo = prompt("Digite a letra que corresponde ao seu sexo [M ou F]").toUpperCase();
+        } if (sexo === "F") {
+            mulheres = mulheres + 1;
+        } if (sexo === "M") {
+            homens = homens + 1;
+        }
+    alert("Quantidade de homens: " + homens +
+        "\nQuantidade de mulheres: " + mulheres
+    )
+}
+
+/*
 Ex. 29
 Criar uma função exercicio29ValidarNota.
 Criar um for para solicitar 5 notas.
