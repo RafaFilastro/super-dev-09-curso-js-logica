@@ -330,3 +330,41 @@ function exercicio05(){
     Apagar o primeiro produto de todos os vetores
     Apresentar todos os dados dos produtos
 */
+
+function exercicio06(){
+    let produtos = [];
+    let quantidades = [];
+    let precos = [];
+    let valoresTotais = [];
+
+    produtos.push(prompt("Digite o nome de um produto"));
+    quantidades.push(parseInt(prompt("Digite a quantidade")));
+    precos.push(parseFloat(prompt("Digite o valor")));
+
+    produtos.push(prompt("Digite o nome de um produto"));
+    quantidades.push(parseInt(prompt("Digite a quantidade")));
+    precos.push(parseFloat(prompt("Digite o valor")));
+
+    produtos.push(prompt("Digite o nome de um produto"));
+    quantidades.push(parseInt(prompt("Digite a quantidade")));
+    precos.push(parseFloat(prompt("Digite o valor")));
+
+    valoresTotais.push(precos[0] * quantidades[0]);
+    valoresTotais.push(precos[1] * quantidades[1]);
+    valoresTotais.push(precos[2] * quantidades[2]);
+
+    alert("Produto: " + produtos[0] +
+        "\nQuantidade: " + quantidades[0] +
+        "\nPreço: R$ " + precos[0].toFixed(2) +
+        "\nO valor total dos produtos: R$ " + valoresTotais[0].toFixed(2) +
+        "\n\nProduto: " + produtos[1] +
+        "\nQuantidade: " + quantidades[1] +
+        "\nPreço: R$ " + precos[1].toFixed(2) +
+        "\n\nO valor total dos produtos: R$ " + valoresTotais[1].toFixed(2) +
+        "\n\nProduto: " + produtos[2] +
+        "\nQuantidade: " + quantidades[2] +
+        "\nPreço: R$ " + precos[2].toFixed(2) +
+        "\nO valor total dos produtos: R$ " + valoresTotais[2].toFixed(2)
+        
+    )
+}
