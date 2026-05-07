@@ -229,7 +229,7 @@ function exercicio04() {
     Apresentar todos os dados dos filmes
 */
 
-function exercicio05(){
+function exercicio05() {
     let filmes = [];
     let generos = [];
     let duracoes = [];
@@ -259,7 +259,7 @@ function exercicio05(){
 
     alert("O primeiro filme: " + filmes[0] +
         "\nO genero: " + generos[0] +
-        "\nA duração em minutos: " + duracoes[0] + 
+        "\nA duração em minutos: " + duracoes[0] +
         "\nA duração em horas: " + duracoesHoras[0].toFixed(2) + " Horas" +
         "\nO segundo filme: " + filmes[1] +
         "\nO genero: " + generos[1] +
@@ -272,7 +272,7 @@ function exercicio05(){
         "\nO quarto filme: " + filmes[3] +
         "\nO genero: " + generos[3] +
         "\nA duração em minutos: " + duracoes[3] +
-        "\nA duração em horas: " + duracoesHoras[3].toFixed(2) + " Horas" 
+        "\nA duração em horas: " + duracoesHoras[3].toFixed(2) + " Horas"
     );
 
     generos[1] = prompt("Digite outro genero");
@@ -282,7 +282,7 @@ function exercicio05(){
 
     alert("O primeiro filme: " + filmes[0] +
         "\nO genero: " + generos[0] +
-        "\nA duração em minutos: " + duracoes[0] + 
+        "\nA duração em minutos: " + duracoes[0] +
         "\nA duração em horas: " + duracoesHoras[0].toFixed(2) + " Horas" +
         "\nO segundo filme: " + filmes[1] +
         "\nO genero: " + generos[1] +
@@ -331,7 +331,7 @@ function exercicio05(){
     Apresentar todos os dados dos produtos
 */
 
-function exercicio06(){
+function exercicio06() {
     let produtos = [];
     let quantidades = [];
     let precos = [];
@@ -365,6 +365,269 @@ function exercicio06(){
         "\nQuantidade: " + quantidades[2] +
         "\nPreço: R$ " + precos[2].toFixed(2) +
         "\nO valor total dos produtos: R$ " + valoresTotais[2].toFixed(2)
-        
+
     )
+}
+
+/*
+1. Criar uma função exercicio07
+   Criar um vetor de nomes
+   Solicitar para o usuário 3 nomes
+   Adicionar os 3 nomes no vetor
+   Utilizar um for para apresentar todos os nomes
+*/
+
+function exercicio07() {
+    let nomes = [];
+
+    for (let i = 0; i < 3; i += 1) {
+        let nome = prompt("Digite um nome");
+        nomes.push(nome);
+    }
+
+    for (let i = 0; i < nomes.length; i += 1) {
+        alert("O nome é: " + nomes[i]);
+    }
+}
+
+
+
+/*
+2. Criar uma função exercicio08
+   Criar um vetor de idades
+   Solicitar para o usuário 4 idades
+   Adicionar as 4 idades no vetor
+   Utilizar um for para apresentar todas as idades
+*/
+
+function exercicio08() {
+    let idades = [];
+
+    for (let i = 0; i < 4; i += 1) {
+        let idade = parseInt(prompt("Digite uma idade"));
+        idades.push(idade);
+    }
+
+    for (let i = 0; i < idades.length; i += 1) {
+        alert("A idade é: " + idades[i]);
+    }
+}
+
+
+/*
+3. Criar uma função exercicio09
+   Criar um vetor de cidades
+   Solicitar para o usuário 5 cidades
+   Adicionar as 5 cidades no vetor
+   Utilizar um for para apresentar todas as cidades
+   Ao final, mostrar a quantidade de cidades cadastradas
+*/
+
+function exercicio09() {
+    let cidades = [];
+
+    for (let i = 0; i < 5; i += 1) {
+        let cidade = prompt("Digite o nome de uma cidade");
+        cidades.push(cidade);
+    }
+
+    for (let i = 0; i < cidades.length; i += 1) {
+        alert("A cidade é: " + cidades[i]);
+    }
+
+    alert("Quantidade de cidades cadastradas: " + cidades.length);
+}
+
+/*
+4. Criar uma função exercicio10
+   Criar um vetor de números
+   Solicitar para o usuário 5 números
+   Adicionar os 5 números no vetor
+   Utilizar um for para somar todos os números do vetor
+   Ao final, mostrar a soma total
+*/
+
+function exercicio10() {
+    let numeros = [];
+    let soma = 0;
+
+    for (let i = 0; i < 5; i += 1) {
+        let numero = parseInt(prompt("Digite um número"));
+        numeros.push(numero);
+    }
+
+    for (let i = 0; i < numeros.length; i += 1) {
+        soma = soma + numeros[i];
+    }
+    alert("A soma total dos números é: " + soma);
+}
+
+/*
+5. Criar uma função exercicio11
+   Criar um vetor de notas
+   Solicitar para o usuário 4 notas
+   Adicionar as 4 notas no vetor
+   Utilizar um for para somar todas as notas
+   Ao final, calcular e mostrar a média
+*/
+
+function exercicio11() {
+    let notas = [];
+    let soma = 0;
+
+    for (let i = 0; i < 4; i += 1) {
+        let nota = parseFloat(prompt("Digite uma nota"));
+        notas.push(nota);
+    }
+
+    for (let i = 0; i < notas.length; i += 1) {
+        soma = soma + notas[i];
+    }
+    let media = soma / notas.length;
+    alert("A média das notas é: " + media.toFixed(2));
+}
+
+/*
+6. Criar uma função exercicio12
+   Criar um vetor de produtos
+   Solicitar para o usuário 4 produtos
+   Adicionar os 4 produtos no vetor
+   Utilizar um for para apresentar todos os produtos
+   Solicitar para o usuário um novo nome para o terceiro produto
+   Alterar o terceiro produto
+   Utilizar um for para apresentar novamente todos os produtos
+*/
+
+function exercicio12() {
+    let produtos = [];
+
+    for (let i = 0; i < 4; i += 1) {
+        let produto = prompt("Digite o nome de um produto");
+        produtos.push(produto);
+    }
+
+    for (let i = 0; i < produtos.length; i += 1) {
+        alert("O produto é: " + produtos[i]);
+    }
+
+    produtos[2] = prompt("Digite um novo nome para o terceiro produto");
+
+    for (let i = 0; i < produtos.length; i += 1) {
+        alert("O produto é: " + produtos[i]);
+    }
+}
+/*
+7. Criar uma função exercicio13
+   Criar um vetor de temperaturas
+   Solicitar para o usuário 5 temperaturas
+   Adicionar as 5 temperaturas no vetor
+   Utilizar um for para descobrir a maior temperatura
+   Ao final, mostrar a maior temperatura informada
+*/
+
+function exercicio13(){
+    let temperaturas = [];
+
+    for (let i = 0; i < 5; i += 1) {
+        let valorTemperatura = parseFloat(prompt("Digite a temperatura"));
+        temperaturas.push(valorTemperatura);
+    }
+
+    let maiorTemperatura = 0;
+
+    for (let i = 0; i < temperaturas.length; i += 1) {
+        if(temperaturas[i] > maiorTemperatura){
+            maiorTemperatura = temperaturas[i];
+        }
+    }
+    alert("A maior temperatura informada é: " + maiorTemperatura);
+}
+
+/*
+8. Criar uma função exercicio14
+   Criar um vetor de preços
+   Solicitar para o usuário 4 preços
+   Adicionar os 4 preços no vetor
+   Utilizar um for para descobrir o menor preço
+   Ao final, mostrar o menor preço informado
+*/
+
+function exercicio14(){
+    let precos = [];
+
+    for (let i = 0; i < 4; i += 1) {
+        let valorPreco = parseFloat(prompt("Digite o preço"));
+        precos.push(valorPreco);
+    }
+
+    let menorPreco = precos[0];
+
+    for (let i = 0; i < precos.length; i += 1) {
+        if(precos[i] < menorPreco){
+            menorPreco = precos[i];
+        }
+    }
+    alert("O menor preço informado é: " + menorPreco.toFixed(2));
+}
+
+/*
+9. Criar uma função exercicio15
+   Criar um vetor de números
+   Solicitar para o usuário 6 números
+   Adicionar os 6 números no vetor
+   Utilizar um for para contar quantos números são pares
+   Ao final, mostrar a quantidade de números pares
+*/
+
+function exercicio15() {
+    let numeros = [];
+    let quantidadePares = 0;
+
+    for (let i = 0; i < 6; i += 1) {
+        let numero = parseInt(prompt("Digite um número"));
+        numeros.push(numero);
+    }
+
+    for (let i = 0; i < numeros.length; i += 1) {
+        if (numeros[i] % 2 === 0) {
+            quantidadePares += 1;
+        }
+    }
+    alert("A quantidade de números pares é: " + quantidadePares);
+}
+
+/*      
+10. Criar uma função exercicio16
+    Criar um vetor de alunos
+    Solicitar para o usuário 5 nomes de alunos
+    Adicionar os 5 nomes no vetor
+    Solicitar para o usuário um nome para pesquisa
+    Utilizar um for para percorrer o vetor e verificar se o nome existe
+    Ao final, mostrar:
+    a) "Aluno encontrado" caso o nome exista
+    b) "Aluno não encontrado" caso o nome não exista
+*/
+
+function exercicio16() {
+    let alunos = [];
+
+    for (let i = 0; i < 5; i += 1) {
+        let nomeAluno = prompt("Digite o nome de um aluno");
+        alunos.push(nomeAluno);
+    }
+
+    let nomePesquisa = prompt("Digite um nome para pesquisa");
+    let alunoEncontrado = false;
+
+    for (let i = 0; i < alunos.length; i += 1) {
+        if (alunos[i] === nomePesquisa) {
+            alunoEncontrado = alunos[i];
+        }
+    }
+
+    if (alunoEncontrado) {
+        alert("Aluno encontrado");
+    } else {
+        alert("Aluno não encontrado");
+    }
 }
