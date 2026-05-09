@@ -525,7 +525,7 @@ function exercicio12() {
    Ao final, mostrar a maior temperatura informada
 */
 
-function exercicio13(){
+function exercicio13() {
     let temperaturas = [];
 
     for (let i = 0; i < 5; i += 1) {
@@ -536,7 +536,7 @@ function exercicio13(){
     let maiorTemperatura = 0;
 
     for (let i = 0; i < temperaturas.length; i += 1) {
-        if(temperaturas[i] > maiorTemperatura){
+        if (temperaturas[i] > maiorTemperatura) {
             maiorTemperatura = temperaturas[i];
         }
     }
@@ -552,7 +552,7 @@ function exercicio13(){
    Ao final, mostrar o menor preço informado
 */
 
-function exercicio14(){
+function exercicio14() {
     let precos = [];
 
     for (let i = 0; i < 4; i += 1) {
@@ -563,7 +563,7 @@ function exercicio14(){
     let menorPreco = precos[0];
 
     for (let i = 0; i < precos.length; i += 1) {
-        if(precos[i] < menorPreco){
+        if (precos[i] < menorPreco) {
             menorPreco = precos[i];
         }
     }
@@ -631,3 +631,290 @@ function exercicio16() {
         alert("Aluno não encontrado");
     }
 }
+
+/*
+17. Criar uma função exercicio17
+    Criar um vetor de números
+    Solicitar para o usuário 6 números
+    Adicionar os 6 números no vetor
+    Utilizar um for para apresentar todos os números
+    Utilizar outro for para mostrar apenas os números maiores que 10
+*/
+
+function exercicio17() {
+    let numeros = [];
+
+    for (let i = 0; i < 6; i += 1) {
+        let numerosDigitados = (parseInt(prompt("Digite o número")));
+        numeros.push(numerosDigitados);
+    }
+    for (let i = 0; i < numeros.length; i += 1) {
+        alert("Números digitados: " + numeros[i]);
+    }
+    for (let i = 0; i < numeros.length; i += 1) {
+        if (numeros[i] > 10) {
+            alert("Número maior que dez: " + numeros[i]);
+        }
+    }
+}
+
+/*
+18. Criar uma função exercicio18
+    Criar um vetor de nomes
+    Solicitar para o usuário 5 nomes
+    Adicionar os 5 nomes no vetor
+    Utilizar um for para contar quantos nomes possuem mais de 5 letras
+    Ao final, mostrar a quantidade encontrada
+*/
+
+function exercicio18(){
+    
+}
+
+/*
+19. Criar uma função exercicio19
+    Criar um vetor de idades
+    Solicitar para o usuário 7 idades
+    Adicionar as 7 idades no vetor
+    Utilizar um for para contar:
+        a) quantas idades são menores que 18
+        b) quantas idades são maiores ou iguais a 18
+    Ao final, mostrar os dois resultados
+
+20. Criar uma função exercicio20
+    Criar um vetor de notas
+    Solicitar para o usuário 6 notas
+    Adicionar as 6 notas no vetor
+    Utilizar um for para mostrar todas as notas
+    Utilizar outro for para contar quantas notas são maiores ou iguais a 7
+    Ao final, mostrar a quantidade de notas aprovadas
+
+21. Criar uma função exercicio22
+    Criar um vetor de cidades
+    Solicitar para o usuário 4 cidades
+    Adicionar as 4 cidades no vetor
+    Solicitar para o usuário um novo nome para a última cidade
+    Alterar a última cidade
+    Utilizar um for para apresentar todas as cidades atualizadas
+
+23. Criar uma função exercicio23
+    Criar um vetor de produtos
+    Solicitar para o usuário 5 produtos
+    Adicionar os 5 produtos no vetor
+    Solicitar para o usuário um nome para pesquisa
+    Utilizar um for para verificar em qual posição o produto foi encontrado
+    Ao final, mostrar:
+        a) o índice do produto, caso exista
+        b) a mensagem "Produto não encontrado", caso não exista
+
+24. Criar uma função exercicio24
+    Criar um vetor de números
+    Solicitar para o usuário 8 números
+    Adicionar os 8 números no vetor
+    Utilizar um for para somar apenas os números pares
+    Utilizar outro for para somar apenas os números ímpares
+    Ao final, mostrar as duas somas
+
+25. Criar uma função exercicio25
+    Criar um vetor de salários
+    Solicitar para o usuário 5 salários
+    Adicionar os 5 salários no vetor
+    Utilizar um for para descobrir:
+        a) o maior salário
+        b) o menor salário
+        c) a média salarial
+    Ao final, mostrar os três resultados
+
+19. Criar uma função exercicio19
+    Criar um vetor de filmes
+    Solicitar para o usuário 5 filmes
+    Adicionar os 5 filmes no vetor
+    Utilizar um for para apresentar todos os filmes
+    Apagar o terceiro filme
+    Utilizar um for para apresentar novamente os filmes restantes
+
+20. Criar uma função exercicio20
+    Criar um vetor de números
+    Solicitar para o usuário 6 números
+    Adicionar os 6 números no vetor
+    Solicitar para o usuário mais 1 número
+    Adicionar o novo número no vetor
+    Utilizar um for para apresentar todos os números
+    Ao final, mostrar a quantidade total de elementos do vetor
+
+21. Criar uma função exercicio21
+    Criar um vetor de alunos
+    Solicitar para o usuário 5 nomes de alunos
+    Adicionar os 5 nomes no vetor
+    Utilizar um for para apresentar os nomes na ordem inversa, do último para o primeiro
+
+22. Criar uma função exercicio22
+    Criar um vetor de números
+    Solicitar para o usuário 7 números
+    Adicionar os 7 números no vetor
+    Utilizar um for para multiplicar todos os números do vetor
+    Ao final, mostrar o resultado da multiplicação
+
+23. Criar uma função exercicio23
+    Criar um vetor de temperaturas
+    Solicitar para o usuário 6 temperaturas
+    Adicionar as 6 temperaturas no vetor
+    Utilizar um for para contar quantas temperaturas são maiores ou iguais a 37.8
+    Ao final, mostrar a quantidade encontrada
+
+24. Criar uma função exercicio24
+    Criar um vetor de nomes
+    Solicitar para o usuário 5 nomes
+    Adicionar os 5 nomes no vetor
+    Utilizar um for para descobrir qual nome possui a menor quantidade de letras
+    Ao final, mostrar o nome encontrado
+
+25. Criar uma função exercicio25
+    Criar um vetor de números
+    Solicitar para o usuário 10 números
+    Adicionar os 10 números no vetor
+    Utilizar um for para contar quantos números são positivos, quantos são negativos e quantos são zero
+    Ao final, mostrar as três quantidades
+
+26. Criar uma função exercicio26
+    Criar um vetor de disciplinas
+    Solicitar para o usuário 4 disciplinas
+    Adicionar as 4 disciplinas no vetor
+    Solicitar para o usuário um novo nome para a segunda disciplina
+    Alterar a segunda disciplina
+    Solicitar para o usuário mais 1 disciplina
+    Adicionar a nova disciplina no vetor
+    Utilizar um for para apresentar todas as disciplinas
+
+27. Criar uma função exercicio27
+    Criar um vetor de preços
+    Solicitar para o usuário 6 preços
+    Adicionar os 6 preços no vetor
+    Utilizar um for para calcular um novo valor com aumento de 10% em cada preço
+    Mostrar o preço antigo e o novo preço de cada item
+
+28. Criar uma função exercicio28
+    Criar um vetor de números
+    Solicitar para o usuário 8 números
+    Adicionar os 8 números no vetor
+    Solicitar para o usuário um número para pesquisa
+    Utilizar um for para contar quantas vezes esse número aparece no vetor
+    Ao final, mostrar a quantidade de repetições
+
+29. Criar uma função exercicio29
+    Criar um vetor de frutas
+    Solicitar para o usuário 5 frutas
+    Adicionar as 5 frutas no vetor
+    Solicitar para o usuário o nome de uma fruta para remoção
+    Utilizar um for para encontrar essa fruta
+    Caso exista, apagar a fruta do vetor
+    Ao final, utilizar um for para apresentar as frutas restantes
+
+30. Criar uma função exercicio30
+    Criar um vetor de notas
+    Solicitar para o usuário 5 notas
+    Adicionar as 5 notas no vetor
+    Utilizar um for para calcular a média da turma
+    Utilizar outro for para contar quantas notas ficaram acima da média
+    Ao final, mostrar:
+        a) a média
+        b) a quantidade de notas acima da média
+
+31. Criar uma função exercicio31
+    Criar um vetor de nomes
+    Solicitar para o usuário 6 nomes
+    Adicionar os 6 nomes no vetor
+    Utilizar um for para mostrar:
+        a) o nome
+        b) a quantidade de letras de cada nome
+        c) se o nome possui quantidade de letras par ou ímpar
+
+32. Criar uma função exercicio32
+    Criar um vetor de números
+    Solicitar para o usuário 7 números
+    Adicionar os 7 números no vetor
+    Utilizar um for para descobrir qual número mais se aproxima de 100
+    Ao final, mostrar o número encontrado
+
+33. Criar uma função exercicio33
+    Criar um vetor de produtos
+    Criar um vetor de preços
+    Solicitar para o usuário os dados de 4 produtos
+    Para cada produto solicitar:
+        a) nome
+        b) preço
+    Adicionar os dados nos vetores
+    Utilizar um for para apresentar todos os produtos com seus preços
+    Utilizar outro for para descobrir qual produto possui o maior preço
+    Ao final, mostrar o nome do produto mais caro
+
+34. Criar uma função exercicio34
+    Criar um vetor de alunos
+    Criar um vetor de notas
+    Solicitar para o usuário os dados de 5 alunos
+    Para cada aluno solicitar:
+        a) nome
+        b) nota
+    Adicionar os dados nos vetores
+    Utilizar um for para apresentar todos os alunos com suas notas
+    Utilizar outro for para contar quantos alunos foram aprovados e quantos foram reprovados
+    Considerar aprovado quem tiver nota maior ou igual a 7
+    Ao final, mostrar as duas quantidades
+
+35. Criar uma função exercicio35
+    Criar um vetor de produtos
+    Criar um vetor de quantidades
+    Solicitar para o usuário os dados de 4 produtos
+    Para cada produto solicitar:
+        a) nome
+        b) quantidade
+    Adicionar os dados nos vetores
+    Utilizar um for para apresentar todos os produtos com suas quantidades
+    Utilizar outro for para descobrir qual produto possui a maior quantidade
+    Ao final, mostrar o nome do produto encontrado
+
+36. Criar uma função exercicio36
+    Criar um vetor de números
+    Solicitar para o usuário 6 números
+    Adicionar os 6 números no vetor
+    Utilizar um for para trocar todos os números negativos por 0
+    Utilizar outro for para apresentar o vetor atualizado
+
+37. Criar uma função exercicio37
+    Criar um vetor de nomes
+    Solicitar para o usuário 5 nomes
+    Adicionar os 5 nomes no vetor
+    Utilizar um for para transformar todos os nomes em letras maiúsculas
+    Utilizar outro for para apresentar os nomes alterados
+
+38. Criar uma função exercicio38
+    Criar um vetor de preços
+    Solicitar para o usuário 5 preços
+    Adicionar os 5 preços no vetor
+    Utilizar um for para calcular o valor total de todos os preços
+    Utilizar outro for para calcular o percentual que cada preço representa do total
+    Ao final, mostrar cada preço e seu percentual sobre o total
+
+39. Criar uma função exercicio39
+    Criar um vetor de números
+    Solicitar para o usuário 8 números
+    Adicionar os 8 números no vetor
+    Utilizar um for para verificar quantos números estão repetidos
+    Ao final, mostrar a quantidade de valores que apareceram mais de uma vez
+
+40. Criar uma função exercicio40
+    Criar um vetor de nomes
+    Criar um vetor de idades
+    Solicitar para o usuário os dados de 5 pessoas
+    Para cada pessoa solicitar:
+        a) nome
+        b) idade
+    Adicionar os dados nos vetores
+    Utilizar um for para apresentar todos os nomes com suas idades
+    Utilizar outro for para descobrir:
+        a) a maior idade
+        b) a menor idade
+        c) o nome da pessoa mais velha
+        d) o nome da pessoa mais nova
+    Ao final, mostrar todos os resultados
+*/
