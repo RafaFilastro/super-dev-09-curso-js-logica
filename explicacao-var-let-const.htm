@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Explicação simples e correta</h1>
+        <h2>var</h2>
+
+        O var é a forma antiga de declarar variável no JavaScript.
+        Ele tem escopo de função e pode causar problemas porque ignora blocos { }, além de permitir redeclaração. Hoje
+        quase não é mais usado.
+    </div>
+    <div>
+        <h2>let</h2>
+
+        O let é usado para variáveis que podem mudar de valor.
+        Ele tem escopo de bloco, então só existe dentro das chaves onde foi criado.
+
+        Exemplo:
+        let idade = 18;idade = 19;
+    </div>
+    <div>
+        <h2>const</h2>
+
+        O const é usado para variáveis que não terão outro valor atribuído.
+        Também possui escopo de bloco.
+        Em objetos e arrays, o conteúdo interno pode mudar, mas a variável não pode apontar para outro objeto.
+
+        Exemplo:
+        const nome = "Rafael";
+    </div>
+    <br><br>
+    <div>
+        Resumo rápido que você pode decorar
+        <br>
+        var = antigolet = variável que pode mudarconst = variável que não pode receber outro valor
+        <br>
+        Se ele perguntar sobre objetos no const
+        Você pode responder:
+        <br>
+        O const não congela o objeto, ele apenas impede que a variável aponte para outro objeto.
+        Isso já mostra que você entendeu uma parte que muita gente não entende.
+        <br>
+        E se quiser impressionar um pouco mais
+        Você pode falar:
+        <br>
+        Hoje o padrão moderno é usar const por padrão e let quando precisar alterar valores.
+        Isso mostra que você entendeu prática moderna de desenvolvimento em JavaScript.
+    </div> 
+</body>
+
+</html>
